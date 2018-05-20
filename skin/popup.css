@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body
 {
-  min-width: 250px;
+  width: 500px;
   margin: 0px;
-  font-family: Segoe UI, Arial, sans-serif;
-  font-size: 13px;
-  color: #545454;
-  background-color: #f8f6f2;
-  background-image: url(background.png);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
 }
 
 #clickhide-instructions,
@@ -40,8 +40,6 @@ header
 {
   height: 45px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #e1ddd8;
-  background-image: url(background-main.png);
 }
 
 #logo
@@ -147,18 +145,6 @@ footer
 {
   cursor: pointer;
   padding: 10px 35px;
-  border-top: 1px solid #e1ddd8;
-  background-image: url(background-main.png);
-}
-
-footer:hover
-{
-  background: -moz-linear-gradient(top, rgba(70, 50, 0, 0.1), rgba(70, 50, 0, 0.1)),
-    url(background-main.png);
-  background: -webkit-linear-gradient(top, rgba(70, 50, 0, 0.1), rgba(70, 50, 0, 0.1)),
-    url(background-main.png);
-  background: linear-gradient(to bottom, rgba(70, 50, 0, 0.1), rgba(70, 50, 0, 0.1)),
-    url(background-main.png);
 }
 
 footer .icon
@@ -177,7 +163,6 @@ li
   cursor: pointer;
   list-style-type: none;
   white-space: nowrap;
-  border-top: 1px dashed #a5a4a1;
 }
 
 li ul
@@ -193,12 +178,18 @@ li li
 
 .menu-item
 {
-  padding: 10px 0px 10px 15px;
+  padding: 10px 0px 8px 15px;
 }
 
-.menu-item:hover
-{
-  background-color: #ece7df;
+.menu-item:hover, footer:hover {
+  font-weight: 700 !important;
+}  
+
+.menu-item-not-clickable {
+  cursor: auto;
+}
+.menu-item-not-clickable:hover {
+  font-weight: 500 !important;
 }
 
 .icon
