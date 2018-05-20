@@ -1,3 +1,10 @@
+
+# Harmony Adblocker
+
+
+
+
+
 Adblock Plus for Chrome, Opera, Microsoft Edge and Firefox
 ==========================================================
 

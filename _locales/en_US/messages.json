@@ -25,7 +25,7 @@
   "disabled_for_site":
   {
     "description": "Popup balloon label to disable blocking",
-    "message": "<strong>Disabled</strong> on this site"
+    "message": "<strong>Disabled</strong> on this site (click to unwhitelist)"
   },
   "easy_create_filter": {
     "description": "Action in popup UI to add a filter which blocks an element selected from the current page",
@@ -33,7 +33,7 @@
   },
   "enabled_for_site": {
     "description": "Popup balloon label to enable blocking",
-    "message": "<strong>Enabled</strong> on this site"
+    "message": "<strong>Enabled</strong> on this site (click to whitelist)"
   },
   "filter_elemhideemulation_nodomain": {
     "message": "No active domain specified for extended element hiding filter"
@@ -116,7 +116,7 @@
   },
   "stats_title": {
     "description": "Title for the stats section in the popup.",
-    "message": "Ads blocked"
+    "message": "Unwanted Resources Blocked"
   },
   "unexpected_filter_list_header": {
     "description": "Error message shown when the user attempts to add a custom filter that has the format of a header (e.g. \"[Adblock Plus 2.0]\") which are only allowed in filter lists",
