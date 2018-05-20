@@ -1,28 +1,32 @@
-Adblock Plus for Chrome, Opera, Microsoft Edge and Firefox
-==========================================================
+![](icons/full/abp-128.png)
+# Harmony Adblocker
+Based on Adblock Plus, with a few changes:
+- Acceptable Ads is disabled by default
+- Better UI
 
-This repository contains the platform-specific Adblock Plus source code for
-Chrome, Opera, Microsoft Edge and Firefox. It can be used to build
-Adblock Plus for these platforms, generic Adblock Plus code will be extracted
-from other repositories automatically (see _dependencies_ file).
+Setting Up
+---------
+Harmony requires Nodejs, NPM and Pipenv:
+```shell
+$ sudo dnf install nodejs # Fedora
+$ sudo apt install nodejs npm # Ubuntu
+$ sudo -H pip install pipenv
+```
+Set up Pipenv:
+```
+$ pipenv shell
+$ pipenv install
+```
 
-Note that the Firefox extension built from this repository is the new
-[WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions).
-The source code of the legacy Adblock Plus extension
-can be found [here](https://hg.adblockplus.org/adblockplus).
-
-Building
+Building the Extension
 ---------
 
-### Requirements
-
-- [Mercurial](https://www.mercurial-scm.org/) or [Git](https://git-scm.com/) (whichever you used to clone this repository)
-- [Python 2.7](https://www.python.org)
-  - [The Jinja2 module](http://jinja.pocoo.org/docs) (>= 2.8)
-  - For signed builds: [PyCrypto module](https://www.dlitz.net/software/pycrypto/)
-- [Node.js](https://nodejs.org/) (>= 7)
-
-### Building the extension
+> For a shortcut, use the following commands:
+> ```shell
+> $ make firefox
+> $ make chrome
+> $ make clean # Remove built extensions
+> ```
 
 Run one of the following commands in the project directory, depending on your
 target platform:
@@ -97,3 +101,9 @@ You can lint the code using [ESLint](http://eslint.org).
 You will need to set up ESLint and our configuration first, see
 [eslint-config-eyeo](https://hg.adblockplus.org/codingtools/file/tip/eslint-config-eyeo)
 for more information.
+
+Testing/Installing
+-------
+
+*Firefox*: go to `about:debugging` and click `Load Temporary Add-On`
+*Chrome*: go to `chrome://extensions`, enable `Developer Mode` and click `Load unpacked extension...`
